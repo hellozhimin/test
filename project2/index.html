@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<style>
+		#target, #target2 {
+			width: 50px;
+			height: 50px;
+			background-color: orange;
+			cursor: move;
+		}
+
+		#target2 {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="target"></div>
+	<div id="target2"></div>
+	<script src="js/move.js"></script>
+	<script>
+		// 使用：声明2个拖拽实例
+		new Drag('target');
+		new Drag('target2');
+	</script>
+</body>
+</html>
